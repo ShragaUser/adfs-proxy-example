@@ -1,0 +1,13 @@
+version: '2.1'
+
+services:
+  new-app:
+    image: new-app
+    build: .
+    environment:
+      NODE_ENV: development
+    ports:
+      - 8747:8747
+      - 9229:9229
+    ## set your startup file here
+    command: node --inspect index.js

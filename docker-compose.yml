@@ -1,0 +1,8 @@
+version: '2.1'
+
+services:
+  shraga-example:
+    image: shraga-example
+    build: .
+    ports:
+      - 8747:8747
