@@ -20,9 +20,9 @@ services:
     - "8443:8443"
   shraga-proxy:
     environment: 
-      MONGODB_URL: mongodb+srv://admin:kanban123@cluster0-tk8aq.mongodb.net/
-      MONGODB_NAME: kanban
-      SESSION_SECRET: 123
+      MONGODB_URL: mongodb://localhost:27017
+      MONGODB_NAME: shraga-proxy
+      SESSION_SECRET: Secret
     image: shragauser/shraga-proxy
     ports:
      - 3000:3000
