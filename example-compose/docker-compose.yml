@@ -20,7 +20,7 @@ services:
     - "8443:8443"
   shraga-proxy:
     environment: 
-      MONGODB_URL: mongodb://localhost:27017
+      MONGODB_URL: mongodb://mongo-shraga:27017
       MONGODB_NAME: shraga-proxy
       SESSION_SECRET: Secret
     image: shragauser/shraga-proxy
