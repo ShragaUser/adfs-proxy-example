@@ -26,3 +26,7 @@ services:
     image: shragauser/shraga-proxy
     ports:
      - 3000:3000
+    depends_on: 
+     - mongo-shraga
+  mongo-shraga:
+    image: mongo:latest
